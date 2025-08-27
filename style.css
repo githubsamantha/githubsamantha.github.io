@@ -47,34 +47,39 @@ h2 {
 /* header */
 #dropdownMenuButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 25px;
+    right: 25px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+#dropdownMenuButton:hover {
+    background-color: rgba(255,255,255,0.2);
+
 }
 
 #hero {
     max-height: 80vh;
-    background-color: #222;
     justify-content: flex-end;
     font-family: var(--hero-font);
     /* max-width: 1800px; */
 }
 
 #neonSignLogo {
-    padding: 3em 5em;
-    width: 30%;
+    padding: 3em;
+    width: 40%;
 }
 
 #neonSignLogo img {
-    height: 30em;
-    max-height: 700px;
+    min-height: 100px;
+    max-height: 400px;
 }
 
 #heroBlurb {
-    width: 70%;
+    width: 60%;
     padding-top: 20vh;
     font-size: 40px;
-    color: #ffffff;
-    
+    color: var(--accent-color-1);
+    font-weight: bold;
 }
 
 #heroBlurb p {
@@ -103,6 +108,10 @@ h2 {
     color: var(--primary-color);
     font-size: 25px;
     border-radius: 3px;
+}
+
+.menu-buttons button:hover {
+    background-color: rgba(255,255,255,0.2);
 }
 
 
