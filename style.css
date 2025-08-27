@@ -10,13 +10,13 @@ Last Modified:  August 27, 2025
     --primary-color: rgb(5, 228, 252);
     --accent-color-1: rgb(220, 176, 97);
     --accent-color-2: rgb(108, 21, 22);
-    --header-font: "Sansation", sans-serif;
+    --header-font: "Gugi", sans-serif;
     --hero-font: "Megrim", sans-serif;
-    /*  Megrim, Aladin, Sansation */
+    /*  Megrim, Aladin, Sansation, Gugi */
  }
 
  @media only screen and (max-width: 900px) {
-    p {
+    body {
         font-size: smaller;
     }
 
@@ -28,7 +28,28 @@ Last Modified:  August 27, 2025
 
     .column-flex {
         flex-direction: column !important;
-        margin-right: 150px;
+        /* margin-right: 150px; */
+    }
+
+    #menus {
+        padding: 20vh 0vh;
+        text-align: center;
+        font-family: var(--header-font)
+    }
+    
+    .menu-buttons button {
+        margin: 10% 25%;
+        padding: 20px 5px;
+        width: 50% !important;
+        border: 5px solid var(--accent-color-1);
+        background-color: #000000;
+        color: var(--primary-color);
+        font-size: 25px;
+        /* border-radius: 3px; */
+    }
+    
+    .menu-buttons button:hover {
+        background-color: rgba(255,255,255,0.2);
     }
 
     #menus .menu-buttons {
@@ -40,7 +61,8 @@ Last Modified:  August 27, 2025
     }
 
     .mobile-home {
-        padding: 15vh !important;
+        padding: 10vh !important;
+        font-size: small !important;
     }
 
     .mobile-mapIcon {
@@ -59,7 +81,7 @@ body {
 /* test for img parallax */
 body, html {
     height: 100%;
-    font-family: var(--header-font);
+    /* font-family: var(--header-font); */
 }
 
 h1 {
@@ -104,7 +126,7 @@ h2 {
 
 #neonSignLogo img {
     min-height: 100px;
-    max-height: 400px;
+    max-height: 300px;
 }
 
 #heroBlurb {
@@ -116,7 +138,7 @@ h2 {
 }
 
 #heroBlurb p {
-    padding: 2em;
+    padding-right: 1em;
 }
 
 
@@ -124,17 +146,18 @@ h2 {
 #menus {
     padding: 20vh 10vh;
     text-align: center;
+    font-family: var(--header-font)
 }
 
 .menu-buttons button {
-    margin: 3em;
+    margin: 1em 0em;
     padding: 20px 5px;
     width: 33%;
     border: 5px solid var(--accent-color-1);
     background-color: #000000;
     color: var(--primary-color);
     font-size: 25px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
 
 .menu-buttons button:hover {
@@ -164,7 +187,7 @@ h2 {
 
 /* home */
 #home {
-    padding: 15vh 25vh;
+    padding: 10vh;
     font-size: 1.5em;
     line-height: 2;
     color: #ffffff;
@@ -183,7 +206,7 @@ footer {
 }
 
 #hours {
-    width: 70%;
+    width: 60%;
     padding: 50px;
 }
 
@@ -196,11 +219,12 @@ footer {
 }
 
 #mapIcon {
-    width: 30%;
+    /* width: 30%; */
     padding: 50px;
 }
 
 #mapIcon .google-maps-icon img {
     border: 2px solid var(--accent-color-1);
+    margin-bottom: 15px;
 }
 
