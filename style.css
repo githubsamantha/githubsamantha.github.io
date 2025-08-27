@@ -1,0 +1,159 @@
+/*
+Title:          Omars Steak and Seafood Stylesheet
+Author:         Web Dev PNW
+Contact:        webdevpnw@gmail.com
+Last Modified:  August 27, 2025
+ */
+
+ :root {
+    --bg-color: #111111;
+    --primary-color: rgb(5, 228, 252);
+    --accent-color-1: rgb(220, 176, 97);
+    --accent-color-2: rgb(108, 21, 22);
+    --header-font: "Sansation", sans-serif;
+    --hero-font: "Megrim", sans-serif;
+    /*  Megrim, Aladin, Sansation */
+ }
+  
+
+
+/* general styles/overrides */
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* test for img parallax */
+body, html {
+    height: 100%;
+    font-family: var(--header-font);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--header-font);
+}
+
+h2 {
+    font-family: var(--header-font);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* header */
+#dropdownMenuButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#hero {
+    max-height: 80vh;
+    background-color: #222;
+    justify-content: flex-end;
+    font-family: var(--hero-font);
+    /* max-width: 1800px; */
+}
+
+#neonSignLogo {
+    padding: 3em 5em;
+    width: 30%;
+}
+
+#neonSignLogo img {
+    height: 30em;
+    max-height: 700px;
+}
+
+#heroBlurb {
+    width: 70%;
+    padding-top: 20vh;
+    font-size: 40px;
+    color: #ffffff;
+    
+}
+
+#heroBlurb p {
+    padding: 2em;
+}
+
+
+/* menu */
+#menus {
+    padding: 20vh 10vh;
+    text-align: center;
+}
+
+.menu-buttons { 
+
+/* justify-content: space-around;  */
+    /*                                       (above)       kind of weird? not even */
+}
+
+.menu-buttons button {
+    margin: 3em;
+    padding: 20px 5px;
+    width: 33%;
+    border: 5px solid var(--accent-color-1);
+    background-color: #000000;
+    color: var(--primary-color);
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+
+/* image transitions */
+.full-page-img {
+  min-height: 60vh; 
+
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+    .food {
+        background-image: url("fish.jpg");
+    }
+
+    .drink {
+        background-image: url("highres_logo.png");
+    }
+
+
+/* home */
+#home {
+    padding: 15vh 25vh;
+    font-size: 1.5em;
+    line-height: 2;
+    color: #ffffff;
+}
+
+/* footer */
+footer {
+    background-color: var(--accent-color-2);
+    min-height: 300px;
+    color: #ffffff;
+}
+
+.google-maps-icon img {
+    height: 20vh;
+    max-height: 200px;
+}
+
+#hours {
+    width: 70%;
+    padding: 50px;
+}
+
+#mapIcon {
+    width: 30%;
+    padding: 50px;
+}
+
+
