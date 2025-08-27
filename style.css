@@ -14,7 +14,40 @@ Last Modified:  August 27, 2025
     --hero-font: "Megrim", sans-serif;
     /*  Megrim, Aladin, Sansation */
  }
-  
+
+ @media only screen and (max-width: 900px) {
+    p {
+        font-size: smaller;
+    }
+
+    .flex-container {
+        /*  */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column-flex {
+        flex-direction: column !important;
+        margin-right: 150px;
+    }
+
+    #menus .menu-buttons {
+        text-align: center;
+    }
+
+    .menu-buttons button {
+        width: 100% !important;
+    }
+
+    .mobile-home {
+        padding: 15vh !important;
+    }
+
+    .mobile-mapIcon {
+        margin-top: 10vh;;
+        width: 100% !important;
+    }
+ }
 
 
 /* general styles/overrides */
@@ -93,12 +126,6 @@ h2 {
     text-align: center;
 }
 
-.menu-buttons { 
-
-/* justify-content: space-around;  */
-    /*                                       (above)       kind of weird? not even */
-}
-
 .menu-buttons button {
     margin: 3em;
     padding: 20px 5px;
@@ -145,7 +172,7 @@ h2 {
 
 /* footer */
 footer {
-    background-color: var(--accent-color-2);
+    /* background-color: var(--accent-color-2); */
     min-height: 300px;
     color: #ffffff;
 }
@@ -160,9 +187,20 @@ footer {
     padding: 50px;
 }
 
+#hours h2 {
+    color: var(--accent-color-1)
+}
+
+#hours p {
+    font-size: 1.3em;
+}
+
 #mapIcon {
     width: 30%;
     padding: 50px;
 }
 
+#mapIcon .google-maps-icon img {
+    border: 2px solid var(--accent-color-1);
+}
 
