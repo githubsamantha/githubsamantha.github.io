@@ -105,10 +105,9 @@ Last Modified:  August 27, 2025
 
     
 
-    /* .mobile-mapIcon {
-        margin-top: 10vh;;
-        width: 100% !important;
-    } */
+    .mobile-mapIcon img {
+        max-height: 50px !important;
+    }
  }
 
 
