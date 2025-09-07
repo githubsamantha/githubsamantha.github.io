@@ -276,8 +276,9 @@ footer {
 }
 
 #mapIcon {
-    /* width: 30%; */
+    width: 30%;
     padding-top: 50px;
+    /* height: 100px; */
 }
 
 #mapIcon .google-maps-icon img {
