@@ -38,6 +38,14 @@ Last Modified:  August 27, 2025
         padding: 7vh !important;
         font-size: 18px !important;
     }
+
+    .hours h2 {
+        font-size: 18px !important;
+    }
+
+    .hours p {
+        font-size: 14px !important;
+    }
  }
 
  /* smaller screens */
