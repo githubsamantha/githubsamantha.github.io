@@ -115,6 +115,7 @@ Last Modified:  August 27, 2025
 
 body {
     background-color: var(--bg-color);
+    overflow: hidden;
 }
 
 /* test for img parallax */
