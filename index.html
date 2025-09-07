@@ -5,13 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Omars Steak and Seafood</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">        <link rel="stylesheet" href="style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aladin&family=Gugi&family=Megrim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chonburi&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon180x180.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon16x16.png">
@@ -21,16 +19,15 @@
 
         <!-- dropdown menu button -->
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="favicon180x180.png" height="40px" alt="">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="favicon180x180.png" height="40px" alt="">
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <!-- home.html | events.html | history.html -->
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Upcoming events</a>
-              <a class="dropdown-item" href="#">History</a>
-            </div>
-        </div>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">Upcoming events</a></li>
+              <li><a class="dropdown-item" href="#">History</a></li>
+            </ul>
+          </div>
 
         <!-- hero -->
         <div id="hero" class="flex-container">
@@ -43,13 +40,18 @@
         </div>
 
         <!-- menu buttons -->
-        <div id="menus">
-            <h1>Menus</h1>
-            <div class="menu-buttons flex-container column-flex">
-                <button>Menu</button>
-                <button>$10 Specials</button>
-                <!-- maybe on Facebook (with wine list) -->
+        <div id="menus" class="container ">
+            <div class="row column-flex">
+                <div class="col-4 menu-buttons">
+                    <button>Menu</button>
+                </div>
+                <div class="col-4 menu-buttons">
+                    <button>$10 Specials</button>
+                </div>
+                <div class="col-4 menu-buttons">
+                    <!-- maybe on Facebook (with wine list) -->
                 <button>Daily Specials</button>
+                </div>
             </div>
         </div>
 
@@ -61,11 +63,9 @@
         <!-- home -->
         <div id="home" class="mobile-home">
             <p>
-                Established in 1946 - making Omar's the longest 
+                Established in 1946, Omar's is the longest 
                 continuously operating restaurant 
-                from Portland Oregon to Redding California -
-                we began our tradition of serving consistently 
-                high quality steaks & seafood. Our goal, 
+                from Portland Oregon to Redding California. Our goal, 
                 along with a quality meal, is to provide our guests 
                 with a warm, comfortable, and relaxing 
                 environment. Great for an outing with friends, 
@@ -86,53 +86,60 @@
         
     </body>
     <footer>
-        <div class="flex-container">
-            <div id="hours">
-                <!-- restaurant and ounge hours -->
-                <h2>Restaurant and Lounge Hours</h2>
-                <p>Everyday: 11am - 10pm
-                <br>
-                CLOSED CHRISTMAS DAY, THANKSGIVING, AND NEW YEARS DAY</p>
-                <br>
-                <!-- happy hour hours -->
-                <h2>Happy Hour</h2>
-                <p>Everyday: 4pm - 6pm</p>
 
-            </div>
-            
-
-            <!-- google maps image click icon thing -->
-            <div id="mapIcon" class="mobile-mapIcon">
-                <div class="google-maps-icon">
-                    <a target="_blank" href="https://www.google.com/maps/place/1380+Siskiyou+Blvd,+Ashland,+OR+97520/@42.1849761,-122.6914702,17z/data=!3m1!4b1!4m6!3m5!1s0x54cf0ca2e01f2627:0xba89795cb43e19f9!8m2!3d42.1849761!4d-122.6914702!16s%2Fg%2F11c3q5jrvn?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D"><img src="omars_google.png" alt="image not available"></a>
-                </div>
-                <div class="flex-container">
-                    <div>
-                        <p>
-                            1380 Siskiyou Blvd
-                        <br>Ashland, Oregon 97520
-                        </p>
-                        <p>
-                            (541) 482-1281
-                        </p>
+        <div class="container">
+            <div class="row">
+                <!-- restaurant and lounge hours -->
+                <div class="col-6">
+                    <div class="hours">
+                        <h2>Restaurant and Lounge Hours</h2>
+                        <p>Everyday: 11am - 10pm
                     </div>
+                    <div class="hours">
+                        <h2>Happy Hour</h2>
+                        <p>Everyday: 4pm - 6pm</p>
+                    </div>
+                </div>
+
+                
+
+                <!-- map icon -->
+                <div class="col-6">
+                    <div id="mapIcon" class="mobile-mapIcon">
+                        <div class="google-maps-icon">
+                            <a target="_blank" href="https://www.google.com/maps/place/1380+Siskiyou+Blvd,+Ashland,+OR+97520/@42.1849761,-122.6914702,17z/data=!3m1!4b1!4m6!3m5!1s0x54cf0ca2e01f2627:0xba89795cb43e19f9!8m2!3d42.1849761!4d-122.6914702!16s%2Fg%2F11c3q5jrvn?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D"><img src="omars_google.png" alt="image not available"></a>
+                        </div>
+                        <div class="flex-container">
+                            <div>
+                                <p>1380 Siskiyou Blvd
+                                <br>Ashland, Oregon 97520
+                                <br>(541) 482-1281</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- facebook icon -->
                     <div>
                         <a href="https://www.facebook.com/omarsfreshseafoodsteaks/" target="_blank">
-                            <img src="fb_icon.png" height="80px" alt="Facebook" style="margin: 25px;">
+                            <img src="fb_icon.png" height="50px" alt="Facebook">
                         </a>
                     </div>
                 </div>
-            </div>
+
+                
+          </div>
         </div>
+
 
         <!-- Web Dev PNW -->
         <div id="WDP" style="text-align: center;">
-            <p>&copy Omars Restaurant and Bar | Website developed by <a href="https://www.webdevpnw.com" style="color: #ffffff; font-weight: bold;">Web Dev PNW</a></p>
+            <p>2025 &copy Omars Restaurant and Bar</p>
+            <p>Website developed by <a href="https://www.webdevpnw.com" style="color: #ffffff; font-weight: bold;">Web Dev PNW</a></p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
     
 </html>

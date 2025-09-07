@@ -10,14 +10,15 @@ Last Modified:  August 27, 2025
     --primary-color: rgb(5, 228, 252);
     --accent-color-1: rgb(220, 176, 97);
     --accent-color-2: rgb(108, 21, 22);
-    --header-font: "Gugi", sans-serif;
+    --font: "Roboto";
+    --header-font: Helvetica, sans-serif;
     --hero-font: "Megrim", sans-serif;
-    /*  Megrim, Aladin, Sansation, Gugi */
+    /*  Anton, Chonburi, Montserrat, Roboto, DM Sans */
  }
 
  @media only screen and (max-width: 900px) {
     body {
-        font-size: smaller;
+        font-family: var(--font);
     }
 
     .flex-container {
@@ -38,14 +39,14 @@ Last Modified:  August 27, 2025
     }
     
     .menu-buttons button {
-        margin: 10% 25%;
-        padding: 20px 5px;
-        width: 50% !important;
+        margin: 1em 0em;
+        padding: 20px;
         border: 5px solid var(--accent-color-1);
-        background-color: #000000;
-        color: var(--primary-color);
-        font-size: 25px;
-        /* border-radius: 3px; */
+        background-color: var(--accent-color-1);
+        color: #111;
+        font-size: 1.2em;
+        border-radius: 3px;
+        box-shadow: inset 0px 0px 3px #111;
     }
     
     .menu-buttons button:hover {
@@ -65,10 +66,10 @@ Last Modified:  August 27, 2025
         font-size: small !important;
     }
 
-    .mobile-mapIcon {
+    /* .mobile-mapIcon {
         margin-top: 10vh;;
         width: 100% !important;
-    }
+    } */
  }
 
 
@@ -105,6 +106,7 @@ h2 {
     top: 25px;
     right: 25px;
     background-color: rgba(255,255,255,0.1);
+    max-height: 100px;
 }
 
 #dropdownMenuButton:hover {
@@ -120,7 +122,7 @@ h2 {
 }
 
 #neonSignLogo {
-    padding: 3em;
+    margin: 15px;
     width: 40%;
 }
 
@@ -151,13 +153,14 @@ h2 {
 
 .menu-buttons button {
     margin: 1em 0em;
-    padding: 20px 5px;
-    width: 33%;
+    padding: 20px;
     border: 5px solid var(--accent-color-1);
-    background-color: #000000;
-    color: var(--primary-color);
-    font-size: 25px;
-    /* border-radius: 3px; */
+    background-color: var(--accent-color-1);
+    color: #111;
+    font-size: 1.2em;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 3px #111;
+    
 }
 
 .menu-buttons button:hover {
@@ -167,7 +170,7 @@ h2 {
 
 /* image transitions */
 .full-page-img {
-  min-height: 60vh; 
+  min-height: 80vh; 
 
   /* parallax scrolling effect */
   background-attachment: fixed;
@@ -187,6 +190,9 @@ h2 {
 
 /* home */
 #home {
+    background-color: var(--accent-color-2);
+}
+#home p {
     padding: 10vh;
     font-size: 1.5em;
     line-height: 2;
@@ -205,22 +211,22 @@ footer {
     max-height: 200px;
 }
 
-#hours {
-    width: 60%;
-    padding: 50px;
+.hours:first-child {
+    padding-top: 50px;
 }
 
-#hours h2 {
-    color: var(--accent-color-1)
+.hours h2 {
+    color: var(--accent-color-1);
+    font-size: 1.5em;
 }
 
-#hours p {
+.hours p {
     font-size: 1.3em;
 }
 
 #mapIcon {
     /* width: 30%; */
-    padding: 50px;
+    padding-top: 50px;
 }
 
 #mapIcon .google-maps-icon img {
@@ -228,3 +234,6 @@ footer {
     margin-bottom: 15px;
 }
 
+#WDP {
+    padding-top: 20vh;
+}
