@@ -10,8 +10,8 @@ Last Modified:  August 27, 2025
     --primary-color: rgb(5, 228, 252);
     --accent-color-1: rgb(220, 176, 97);
     --accent-color-2: rgb(108, 21, 22);
-    --font: "Roboto";
-    --header-font: Helvetica, sans-serif;
+    --font: "DM Sans";
+    --header-font: "DM Sans";
     --hero-font: "Megrim", sans-serif;
     /*  Anton, Chonburi, Montserrat, Roboto, DM Sans */
  }
@@ -140,6 +140,17 @@ h1 {
 
 h2 {
     font-family: var(--header-font);
+    color: var(--accent-color-1);
+    font-size: 1.3em;
+}
+
+p {
+    font-family: var(--font);
+}
+
+.width {
+    max-width: 750px;
+    margin: auto !important;
 }
 
 .flex-container {
@@ -242,12 +253,23 @@ h2 {
     padding-bottom: 0;
 }
 
+#home h2 {
+    text-align: center;
+    padding-top: 10vh;
+}
+
 #home p {
     padding: 10vh;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 2;
     color: #ffffff;
     margin: 0;
+}
+
+#home img {
+    height: 20vh;
+    display: block;
+    margin: auto;
 }
 
 /* footer */
@@ -266,17 +288,12 @@ footer {
     padding-top: 50px;
 }
 
-.hours h2 {
-    color: var(--accent-color-1);
-    font-size: 1.5em;
-}
-
-.hours p {
-    font-size: 1.3em;
+footer p {
+    font-size: 1em;
 }
 
 #mapIcon {
-    width: 30%;
+    /* width: 30%; */
     padding-top: 50px;
     /* height: 100px; */
 }
@@ -305,9 +322,6 @@ footer {
 
 
 
-/* Creative button styles that complement your existing design */
-
-/* Neon glow button - matches your primary color theme */
 .btn-neon {
     background: transparent;
     border: 2px solid var(--primary-color);
