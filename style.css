@@ -238,11 +238,11 @@ p {
 }
 
     .food {
-        background-image: url("fish.jpg");
+        background-image: url("img_fish.jpg");
     }
 
     .drink {
-        background-image: url("highres_logo.png");
+        background-image: url("img_highres_logo.png");
     }
 
 
@@ -256,10 +256,11 @@ p {
 #home h2 {
     text-align: center;
     padding-top: 10vh;
+    font-size: 1.8em;;
 }
 
 #home p {
-    padding: 10vh;
+    padding: 10vh 10vh 20vh;
     font-size: 1em;
     line-height: 2;
     color: #ffffff;
