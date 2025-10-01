@@ -253,14 +253,27 @@ p {
     padding-bottom: 0;
 }
 
-#home h2 {
+#home h2,
+#catering h2,
+#events h2,
+#history h2 {
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 8vh;
     font-size: 1.8em;;
 }
 
-#home p {
+#home p,
+#catering p {
     padding: 10vh 10vh 20vh;
+    font-size: 1em;
+    line-height: 2;
+    color: #ffffff;
+    margin: 0;
+}
+
+#events p,
+#history p {
+    padding: 5vh 0vh;
     font-size: 1em;
     line-height: 2;
     color: #ffffff;
@@ -271,6 +284,28 @@ p {
     height: 20vh;
     display: block;
     margin: auto;
+}
+
+/* events */
+#events {
+    margin-bottom: 20vh;
+}
+
+#catering {
+    border: 1px solid #444;
+    background-color: #222;
+}
+
+
+/* history */
+#history {
+    border: 1px solid #444;
+    background-color: #222;
+    padding: 10vh;
+    /* font-size: 1em;
+    line-height: 2;
+    color: #ffffff;
+    margin: 0; */
 }
 
 /* footer */
