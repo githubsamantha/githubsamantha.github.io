@@ -1,8 +1,8 @@
 /*
-Title:          Omars Steak and Seafood Stylesheet
+Title:          Omar's Steak and Seafood Stylesheet
 Author:         Web Dev PNW
 Contact:        webdevpnw@gmail.com
-Last Modified:  August 27, 2025
+Last Modified:  September 30, 2025
  */
 
  :root {
@@ -34,7 +34,7 @@ Last Modified:  August 27, 2025
     #catering h2,
     #events h2,
     #history h2 {
-        font-size: 22px !important;
+        font-size: 24px !important;
     }
 /* 
     .hours p,
@@ -73,21 +73,6 @@ Last Modified:  August 27, 2025
         text-align: center;
         font-family: var(--header-font)
     }
-    
-    /* .menu-buttons button {
-        margin: 1em 0em;
-        padding: 20px;
-        border: 5px solid var(--accent-color-1);
-        background-color: var(--accent-color-1);
-        color: #111;
-        font-size: 1.2em;
-        border-radius: 3px;
-        box-shadow: inset 0px 0px 3px #111;
-    }
-    
-    .menu-buttons button:hover {
-        background-color: rgba(255,255,255,0.2);
-    } */
 
     #menus .menu-buttons {
         text-align: center;
@@ -124,7 +109,6 @@ body {
 /* test for img parallax */
 body, html {
     height: 100%;
-    /* font-family: var(--header-font); */
 }
 
 h1 {
@@ -172,7 +156,6 @@ p {
     max-height: 80vh;
     justify-content: flex-end;
     font-family: var(--hero-font);
-    /* max-width: 1800px; */
 }
 
 #neonSignLogo {
@@ -205,22 +188,6 @@ p {
     font-family: var(--header-font)
 }
 
-/* .menu-buttons button {
-    margin: 1em 0em;
-    padding: 20px;
-    border: 5px solid var(--accent-color-1);
-    background-color: var(--accent-color-1);
-    color: #111;
-    font-size: 1.2em;
-    border-radius: 3px;
-    box-shadow: inset 0px 0px 3px #111;
-    
-}
-
-.menu-buttons button:hover {
-    background-color: rgba(255,255,255,0.2);
-} */
-
 
 /* image transitions */
 .full-page-img {
@@ -242,7 +209,7 @@ p {
     }
 
 
-/* home */
+/* main components */
 #home {
     background-color: var(--accent-color-2);
     min-height: 70vh;
@@ -298,10 +265,6 @@ p {
     border: 1px solid #444;
     background-color: #222;
     padding: 10vh;
-    /* font-size: 1em;
-    line-height: 2;
-    color: #ffffff;
-    margin: 0; */
 }
 
 /* footer */
@@ -325,9 +288,7 @@ footer p {
 }
 
 #mapIcon {
-    /* width: 30%; */
     padding-top: 50px;
-    /* height: 100px; */
 }
 
 #mapIcon .google-maps-icon img {
