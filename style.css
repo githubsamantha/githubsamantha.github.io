@@ -267,6 +267,18 @@ p {
     padding: 10vh;
 }
 
+#carousel {
+    padding: 5vh;
+    background:#333;
+}
+
+.carousel-item img {
+    height: 40vh;
+    max-height: 50vh;
+    width: auto;
+    margin: auto;
+}
+
 /* footer */
 footer {
     /* background-color: var(--accent-color-2); */
